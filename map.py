@@ -4,7 +4,7 @@
 with open("ULT/MAP", "rb") as f:
 
     ## britannia
-    
+
     # 8 x 8 blocks
     for yy in range(8):
         for xx in range(8):
@@ -15,6 +15,6 @@ with open("ULT/MAP", "rb") as f:
                 for x in range(8):
                     a, b, c = f.read(3)
                     d, e = divmod(c * 256 * 256 + b * 256 + a, 4096)
-                    print(f"{d:04X}", end=" ")
                     print(f"{e:04X}", end=" ")
+                    print(f"{d:04X}", end=" ")
                 print()
